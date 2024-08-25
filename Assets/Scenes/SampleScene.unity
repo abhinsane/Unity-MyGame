@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 860172108}
   - component: {fileID: 860172111}
   - component: {fileID: 860172110}
-  - component: {fileID: 860172112}
+  - component: {fileID: 860172114}
   - component: {fileID: 860172113}
   m_Layer: 0
   m_Name: 'Player '
@@ -364,19 +364,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
---- !u!114 &860172112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860172107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a36c9919c0edd7438940e88c74482b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!95 &860172113
 Animator:
   serializedVersion: 5
@@ -398,6 +385,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &860172114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860172107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff0a815b8ea8874aa9101ed3de11b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theRB: {fileID: 860172110}
+  moveSpeed: 10
+  myAnim: {fileID: 860172113}
 --- !u!1 &1586271128
 GameObject:
   m_ObjectHideFlags: 0
