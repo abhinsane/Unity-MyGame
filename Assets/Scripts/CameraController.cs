@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class CameraController : MonoBehaviour
 {
     public Transform target;
+
+    public Tilemap theMap;
+    private Vector3 bottomLeftLimit;
+    private Vector3 topRightLimit;
     // Start is called before the first frame update
     void Start()
     {
