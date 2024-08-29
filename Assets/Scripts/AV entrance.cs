@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EVE : MonoBehaviour
 {
     public string transitionName;
@@ -12,6 +13,7 @@ public class EVE : MonoBehaviour
         {
             PlayerController.instance.transform.position = transform.position;
         }
+        UIFade.instance.fadeFromBlack();
     }
 
     // Update is called once per frame
