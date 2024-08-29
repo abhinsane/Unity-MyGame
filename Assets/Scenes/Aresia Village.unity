@@ -536,6 +536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Custom Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8882399333191994485, guid: e50a749011e4e8842a0bdf13512ed3a4, type: 3}
+      propertyPath: theMap
+      value: 
+      objectReference: {fileID: 1570993446}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
