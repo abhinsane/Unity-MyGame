@@ -1,0 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DialogActivater : MonoBehaviour
+{
+    public string[] lines;
+
+    private bool canActivate;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+       if(canActivate && Input.GetButtonDown("Fire1"))
+       {
+        DialogManager.instance.ShowDialog(lines);
+       }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            canActivate = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            canActivate = false;
+        }
+    }
+}
