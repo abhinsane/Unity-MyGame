@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Linq;
 public class GameMenu : MonoBehaviour
 {
 
@@ -19,6 +18,8 @@ public class GameMenu : MonoBehaviour
 
     public GameObject[] statusButtons;
 
+    public TextMeshProUGUI statusName,statusHP,statusMP,statusStr,statusDef,statusWpnEqpd,statusWpnPwr,statusArmrEqpd,statusArmrPwr,statusExp;
+    public Image statusImage;
 
 
 
@@ -107,11 +108,33 @@ public class GameMenu : MonoBehaviour
     public void OpenStatus()
     {
         UpdateMainStats();
-        //update the information that is shown
-        for(int i = 0; i <statusButtons.Length; i++)
+        StatusChar(0);
+ 
+        for(int i = 0; i<statusButtons.Length; i++)
         {
             statusButtons[i].SetActive(PlayerStats[i].gameObject.activeInHierarchy);
-            statusButtons[i].GetComponentInChildren<Text>().text = PlayerStats[i].CharName;
+            statusButtons[i].GetComponentInChildren<TextMeshProUGUI>(true).text = PlayerStats[i].CharName;
         }
-    }    
+    }
+
+    public void StatusChar(int Selected)
+    {
+        statusName.text = PlayerStats[Selected].CharName;
+        statusHP.text = PlayerStats[Selected].currentHP + "/" +PlayerStats[Selected].maxHP;
+        statusMP.text = PlayerStats[Selected].currentMP + "/" + PlayerStats[Selected].maxMP;
+        statusStr.text = PlayerStats[Selected].strength.ToString();
+        statusDef.text = PlayerStats[Selected].defence.ToString();
+        if(PlayerStats[Selected].equippedWpn != "")
+        {
+            statusWpnEqpd.text = PlayerStats[Selected].equippedWpn;
+        }
+        statusWpnEqpd.text = PlayerStats[Selected].wpnPwr.ToString();
+        if(PlayerStats[Selected].equippedWpn != "")
+        {
+            statusWpnEqpd.text = PlayerStats[Selected].equippedArmr;
+        }
+        statusArmrPwr.text = PlayerStats[Selected].armPwr.ToString();
+        statusExp.text = (PlayerStats[Selected].expToNextLevel[PlayerStats[Selected].PlayerLevel] - PlayerStats[Selected].currentEXP).ToString();
+        statusImage.sprite = PlayerStats[Selected].charImage;
+    }
 }

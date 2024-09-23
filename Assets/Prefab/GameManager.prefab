@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharName: Cilina
   PlayerLevel: 3
-  currentEXP: 0
+  currentEXP: 26
   expToNextLevel: 
   maxLevel: 10
   baseEXP: 1000
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharName: Raider
   PlayerLevel: 1
-  currentEXP: 0
+  currentEXP: 45
   expToNextLevel: 
   maxLevel: 10
   baseEXP: 1000

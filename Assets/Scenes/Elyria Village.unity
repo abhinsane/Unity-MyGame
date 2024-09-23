@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &142290262 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2039529420548570967, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-  m_PrefabInstance: {fileID: 879758871}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &219533518
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,11 +417,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.850103, y: 3.544633}
   m_EdgeRadius: 0
---- !u!1 &517411033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3463603477201419789, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-  m_PrefabInstance: {fileID: 879758871}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &621246629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -505,26 +495,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1946359304488084803, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: statusButtons.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1946359304488084803, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: statusButtons.Array.data[0]
-      value: 
-      objectReference: {fileID: 517411033}
-    - target: {fileID: 1946359304488084803, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: statusButtons.Array.data[1]
-      value: 
-      objectReference: {fileID: 2061188747}
-    - target: {fileID: 1946359304488084803, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: statusButtons.Array.data[2]
-      value: 
-      objectReference: {fileID: 142290262}
-    - target: {fileID: 1946359304488084803, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: statusButtons.Array.data[3]
-      value: 
-      objectReference: {fileID: 517411033}
     - target: {fileID: 2120225452377192816, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -624,18 +594,6 @@ PrefabInstance:
     - target: {fileID: 8561562561963851342, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
       propertyPath: m_Name
       value: UI Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8656084847056973414, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8656084847056973414, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8656084847056973414, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenStatus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -130264,11 +130222,6 @@ Transform:
   - {fileID: 1583121112}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2061188747 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4896000962109004167, guid: 603bbcc911f02ac45ab94aef5352e10d, type: 3}
-  m_PrefabInstance: {fileID: 879758871}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1689404511107237676
 PrefabInstance:
   m_ObjectHideFlags: 0
