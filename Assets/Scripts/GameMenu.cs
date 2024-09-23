@@ -6,6 +6,7 @@ using TMPro;
 public class GameMenu : MonoBehaviour
 {
 
+    [Header ("Menu Details")]
     public GameObject theMenu;
 
     public GameObject[] windows;
@@ -18,15 +19,26 @@ public class GameMenu : MonoBehaviour
 
     public GameObject[] statusButtons;
 
-    public TextMeshProUGUI statusName,statusHP,statusMP,statusStr,statusDef,statusWpnEqpd,statusWpnPwr,statusArmrEqpd,statusArmrPwr,statusExp;
+    
+    public TextMeshProUGUI statusName,statusHP,statusMP,statusStrength,statusDefence,statusEquippedArmor,statusWeaponPower,statusEquippedWeapon,statusArmorPower,statusExpToNextlvl;
     public Image statusImage;
 
+    [Header("Menu Button")]
+    public ItemButton[] itemButtons;
+    public string SelectedItem;
+    public Item activeItem;
+    public TextMeshProUGUI itemName,iteamDescription, useButtonText;
+
+    public static GameMenu instance;
+
+    public GameObject itemCharChoiceMenu;
+    public TextMeshProUGUI[] itemCharChoiceNames;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
@@ -91,6 +103,7 @@ public class GameMenu : MonoBehaviour
                 windows[i].SetActive(false);
             }
         }
+        itemCharChoiceMenu.SetActive(false);
     }
 
     public void CloseMenu()
@@ -122,19 +135,94 @@ public class GameMenu : MonoBehaviour
         statusName.text = PlayerStats[Selected].CharName;
         statusHP.text = PlayerStats[Selected].currentHP + "/" +PlayerStats[Selected].maxHP;
         statusMP.text = PlayerStats[Selected].currentMP + "/" + PlayerStats[Selected].maxMP;
-        statusStr.text = PlayerStats[Selected].strength.ToString();
-        statusDef.text = PlayerStats[Selected].defence.ToString();
+        statusStrength.text = PlayerStats[Selected].strength.ToString();
+        statusDefence.text = PlayerStats[Selected].defence.ToString();
         if(PlayerStats[Selected].equippedWpn != "")
         {
-            statusWpnEqpd.text = PlayerStats[Selected].equippedWpn;
+            statusEquippedWeapon.text = PlayerStats[Selected].equippedWpn;
         }
-        statusWpnEqpd.text = PlayerStats[Selected].wpnPwr.ToString();
+        statusEquippedWeapon.text = PlayerStats[Selected].wpnPwr.ToString();
         if(PlayerStats[Selected].equippedWpn != "")
         {
-            statusWpnEqpd.text = PlayerStats[Selected].equippedArmr;
+            statusEquippedWeapon.text = PlayerStats[Selected].equippedArmr;
         }
-        statusArmrPwr.text = PlayerStats[Selected].armPwr.ToString();
-        statusExp.text = (PlayerStats[Selected].expToNextLevel[PlayerStats[Selected].PlayerLevel] - PlayerStats[Selected].currentEXP).ToString();
+        statusArmorPower.text = PlayerStats[Selected].armPwr.ToString();
+        statusExpToNextlvl.text = (PlayerStats[Selected].expToNextLevel[PlayerStats[Selected].PlayerLevel] - PlayerStats[Selected].currentEXP).ToString();
         statusImage.sprite = PlayerStats[Selected].charImage;
     }
+
+    public void ShowItems()
+    {
+
+        GameManager.instance.SortItems();
+        for(int i = 0; i < itemButtons.Length;i++)
+        {
+            itemButtons[i].buttonValue = i;
+
+            if(GameManager.instance.itemHeld[i] != "")
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(true);
+                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemHeld[i]).itemSprite;
+                itemButtons[i].amountText.text = GameManager.instance.NumberOfItems[i].ToString();
+
+            }
+            else
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(false);
+                itemButtons[i].amountText.text = "";
+            }
+        }
+    }
+
+    public void SelectItem(Item newItem)
+    {
+        activeItem = newItem;
+
+        if(activeItem.isItem)
+        {
+            useButtonText.text = "Use";
+        }
+        if(activeItem.isWeapon || activeItem.isArmour)
+        {
+            useButtonText.text = "Equip";
+        }
+
+        itemName.text = activeItem.itemName;
+        iteamDescription.text = activeItem.description;
+    }
+
+    public void DiscardItem()
+    {
+        if(activeItem !=null)
+        {
+            GameManager.instance.RemoveItem(activeItem.itemName);
+        }
+    }
+
+    public void OpenItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(true);
+
+        for(int i = 0; i < itemCharChoiceNames.Length;i++)
+        {
+            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].CharName;
+            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+        }
+
+    }
+    
+
+    public void CloseItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(true);
+
+    }
+
+    public void UseItem(int selectedChar)
+    {
+        activeItem.Use(selectedChar);
+        CloseItemCharChoice();
+    }
+
+    
 }
