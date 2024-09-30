@@ -135,18 +135,18 @@ public class GameMenu : MonoBehaviour
         statusName.text = PlayerStats[Selected].CharName;
         statusHP.text = PlayerStats[Selected].currentHP + "/" +PlayerStats[Selected].maxHP;
         statusMP.text = PlayerStats[Selected].currentMP + "/" + PlayerStats[Selected].maxMP;
-        statusStrength.text = PlayerStats[Selected].strength.ToString();
-        statusDefence.text = PlayerStats[Selected].defence.ToString();
-        if(PlayerStats[Selected].equippedWpn != "")
+        statusStrength.text = PlayerStats[Selected].Strength.ToString();
+        statusDefence.text = PlayerStats[Selected].Defence.ToString();
+        if(PlayerStats[Selected].EquippedWeapon != "")
         {
-            statusEquippedWeapon.text = PlayerStats[Selected].equippedWpn;
+            statusEquippedWeapon.text = PlayerStats[Selected].EquippedWeapon;
         }
-        statusEquippedWeapon.text = PlayerStats[Selected].wpnPwr.ToString();
-        if(PlayerStats[Selected].equippedWpn != "")
+        statusEquippedWeapon.text = PlayerStats[Selected].WeaponPower.ToString();
+        if(PlayerStats[Selected].EquippedWeapon != "")
         {
-            statusEquippedWeapon.text = PlayerStats[Selected].equippedArmr;
+            statusEquippedWeapon.text = PlayerStats[Selected].EquippedArmor;
         }
-        statusArmorPower.text = PlayerStats[Selected].armPwr.ToString();
+        statusArmorPower.text = PlayerStats[Selected].ArmorPower.ToString();
         statusExpToNextlvl.text = (PlayerStats[Selected].expToNextLevel[PlayerStats[Selected].PlayerLevel] - PlayerStats[Selected].currentEXP).ToString();
         statusImage.sprite = PlayerStats[Selected].charImage;
     }

@@ -62,28 +62,28 @@ public class Item : MonoBehaviour
 
             if(affectStr)
             {
-                selectedChar.strength += amountToChange;
+                selectedChar.Strength += amountToChange;
             }
 
             if(isWeapon)
             {
-                if(selectedChar.equippedWpn != "")
+                if(selectedChar.EquippedWeapon != "")
                 {
-                    GameManager.instance.AddItem(selectedChar.equippedWpn);
+                    GameManager.instance.AddItem(selectedChar.EquippedWeapon);
                 }
-                selectedChar.equippedWpn = itemName;
-                selectedChar.wpnPwr = weaponStrength;
+                selectedChar.EquippedWeapon = itemName;
+                selectedChar.WeaponPower = weaponStrength;
 
             }
 
             if(isArmour)
             {
-                if(selectedChar.equippedWpn != "")
+                if(selectedChar.EquippedWeapon != "")
                 {
-                    GameManager.instance.AddItem(selectedChar.equippedArmr);
+                    GameManager.instance.AddItem(selectedChar.EquippedArmor);
                 }
-                selectedChar.equippedArmr = itemName;
-                selectedChar.armPwr = armorStrength;
+                selectedChar.EquippedArmor = itemName;
+                selectedChar.ArmorPower = armorStrength;
 
             }
         }
