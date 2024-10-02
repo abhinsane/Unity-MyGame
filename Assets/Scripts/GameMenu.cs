@@ -141,10 +141,16 @@ public class GameMenu : MonoBehaviour
         {
             statusEquippedWeapon.text = PlayerStats[Selected].EquippedWeapon;
         }
+        else{
+            statusEquippedWeapon.text = "None";
+        }
         statusEquippedWeapon.text = PlayerStats[Selected].WeaponPower.ToString();
         if(PlayerStats[Selected].EquippedWeapon != "")
         {
             statusEquippedWeapon.text = PlayerStats[Selected].EquippedArmor;
+        }
+        else{
+            statusEquippedArmor.text = "None";
         }
         statusArmorPower.text = PlayerStats[Selected].ArmorPower.ToString();
         statusExpToNextlvl.text = (PlayerStats[Selected].expToNextLevel[PlayerStats[Selected].PlayerLevel] - PlayerStats[Selected].currentEXP).ToString();
