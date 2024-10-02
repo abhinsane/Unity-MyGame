@@ -34,6 +34,7 @@ public class GameMenu : MonoBehaviour
     public GameObject itemCharChoiceMenu;
     public TextMeshProUGUI[] itemCharChoiceNames;
 
+    public TextMeshProUGUI[] goldText;
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +87,8 @@ public class GameMenu : MonoBehaviour
                 charStatHolder[i].SetActive(false);
             }
         }
+
+        goldText.text = GameManager.instance.currentGold + "g";
 
     }
 

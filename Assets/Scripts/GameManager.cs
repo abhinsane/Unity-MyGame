@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public int[] NumberOfItems;
     public Item[] referenceItems;
 
+    public int currentGold;
+
     // Start is called before the first frame update
     void Start()
     {
