@@ -16,6 +16,8 @@ public class Shop : MonoBehaviour
 
     public TextMeshProUGUI goldText;
 
+    public string[] itemsForSale;
+
     // Start is called before the first frame update
     void Start()
     {
