@@ -164,8 +164,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 722779715}
   - {fileID: 1906261107}
+  - {fileID: 722779715}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &216128538
@@ -236,9 +236,9 @@ GameObject:
   - component: {fileID: 722779715}
   - component: {fileID: 722779720}
   - component: {fileID: 722779719}
+  - component: {fileID: 722779721}
   - component: {fileID: 722779717}
   - component: {fileID: 722779716}
-  - component: {fileID: 722779721}
   m_Layer: 0
   m_Name: top
   m_TagString: Untagged
@@ -5371,9 +5371,9 @@ GameObject:
   - component: {fileID: 1906261107}
   - component: {fileID: 1906261112}
   - component: {fileID: 1906261111}
+  - component: {fileID: 1906261113}
   - component: {fileID: 1906261110}
   - component: {fileID: 1906261109}
-  - component: {fileID: 1906261113}
   m_Layer: 0
   m_Name: bg
   m_TagString: Untagged
