@@ -59,8 +59,8 @@ MonoBehaviour:
   Defence: 0
   WeaponPower: 0
   ArmorPower: 0
-  EquippedWeapon: 
-  EquippedArmor: 
+  EquippedWeapon: None
+  EquippedArmor: None
   charImage: {fileID: 445907552, guid: 7b649f461aed38740915ad5efa4bd2ce, type: 3}
 --- !u!1 &3941436058883129870
 GameObject:
@@ -121,8 +121,8 @@ MonoBehaviour:
   Defence: 0
   WeaponPower: 0
   ArmorPower: 0
-  EquippedWeapon: 
-  EquippedArmor: 
+  EquippedWeapon: None
+  EquippedArmor: None
   charImage: {fileID: -239922301, guid: d48572470db426a4a8902bf7c668fc4c, type: 3}
 --- !u!1 &6101530801160117808
 GameObject:
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf25b64e07ac87b42a6d8d4f2ca3f31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharName: Cilina
+  CharName: player
   PlayerLevel: 3
   currentEXP: 0
   expToNextLevel: 
@@ -183,8 +183,8 @@ MonoBehaviour:
   Defence: 0
   WeaponPower: 0
   ArmorPower: 0
-  EquippedWeapon: 
-  EquippedArmor: 
+  EquippedWeapon: None
+  EquippedArmor: none
   charImage: {fileID: 445907552, guid: 7b649f461aed38740915ad5efa4bd2ce, type: 3}
 --- !u!1 &8011476255300832109
 GameObject:
@@ -240,6 +240,7 @@ MonoBehaviour:
   gameMenuOpen: 0
   dialogActive: 0
   fadingBetweenAreas: 0
+  shopActive: 0
   itemHeld:
   - Health potion
   - Mana potion
@@ -289,3 +290,4 @@ MonoBehaviour:
   - {fileID: 2974424716329737480, guid: 8661431e7b957824eb636b1b05cea395, type: 3}
   - {fileID: 8796069361677754702, guid: f67790e874d0fb64ea7ab154fd86c444, type: 3}
   - {fileID: 858582305639641597, guid: e78ef8ac65501ba438f942c566469c3e, type: 3}
+  currentGold: 100
