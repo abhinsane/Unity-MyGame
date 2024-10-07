@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210360338043075714}
   - component: {fileID: 2666183835204013533}
+  - component: {fileID: 5304050744638662396}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -291,3 +292,22 @@ MonoBehaviour:
   - {fileID: 8796069361677754702, guid: f67790e874d0fb64ea7ab154fd86c444, type: 3}
   - {fileID: 858582305639641597, guid: e78ef8ac65501ba438f942c566469c3e, type: 3}
   currentGold: 100
+--- !u!114 &5304050744638662396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011476255300832109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb5e4f6853278a4497e676add7462da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkerNames:
+  - 
+  - Archery
+  - wood cutting
+  - book reading
+  - quest test
+  questMarkerComplete: 

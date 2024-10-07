@@ -10121,7 +10121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7906977383070808361}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1690405442186464848}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: SellItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1277849253269469741
 GameObject:
   m_ObjectHideFlags: 0
@@ -19359,7 +19371,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8010822396106314883}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1690405442186464848}
+        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
+        m_MethodName: BuyItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2496012335298378511
 GameObject:
   m_ObjectHideFlags: 0
@@ -29125,7 +29149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 170.38794, y: -445.547}
+  m_AnchoredPosition: {x: 224, y: -811}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5715424856785362339
@@ -54770,6 +54794,7 @@ MonoBehaviour:
   - 'it''s not '
   - working
   currentLine: 0
+  conversationEnd: 0
 --- !u!114 &1946359304488084803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54902,6 +54927,96 @@ MonoBehaviour:
   buyMenu: {fileID: 6763625940591821279}
   sellMenu: {fileID: 2700569946892461302}
   goldText: {fileID: 8566146248141980137}
+  itemsForSale: []
+  buyItemButtons:
+  - {fileID: 1525517461140215339}
+  - {fileID: 565641928982922806}
+  - {fileID: 984383541743021039}
+  - {fileID: 6393997681968467420}
+  - {fileID: 6242995443225402285}
+  - {fileID: 2984278730190911726}
+  - {fileID: 8987946234849566473}
+  - {fileID: 5249928694850764628}
+  - {fileID: 5451057101717516858}
+  - {fileID: 2882268887390608876}
+  - {fileID: 8933371931193446423}
+  - {fileID: 9095992651923325415}
+  - {fileID: 7045474602565285226}
+  - {fileID: 7681018705290805160}
+  - {fileID: 2633753901105676776}
+  - {fileID: 4598079778639538911}
+  - {fileID: 488401568341322653}
+  - {fileID: 1977192061833149210}
+  - {fileID: 9212744359879329813}
+  - {fileID: 2399304457490798541}
+  - {fileID: 8034972038602413764}
+  - {fileID: 3769504239355706749}
+  - {fileID: 2217599673139431831}
+  - {fileID: 5634410250047480990}
+  - {fileID: 6640508116730947344}
+  - {fileID: 1074451579479332824}
+  - {fileID: 3707148601571983494}
+  - {fileID: 6086658742618036242}
+  - {fileID: 8232017644650108863}
+  - {fileID: 7439992806321055136}
+  - {fileID: 8646896894210190797}
+  - {fileID: 286869370992143433}
+  - {fileID: 6528507648018014189}
+  - {fileID: 6077275560282741592}
+  - {fileID: 6903829180713771183}
+  - {fileID: 3567824388495138960}
+  - {fileID: 934250923809958711}
+  - {fileID: 6053904472201107673}
+  - {fileID: 4575518880199443183}
+  - {fileID: 8209711731249569509}
+  sellItemButtons:
+  - {fileID: 5914153419155969166}
+  - {fileID: 736207417273984924}
+  - {fileID: 7247618953181366874}
+  - {fileID: 7389487256800482068}
+  - {fileID: 2197222560846684719}
+  - {fileID: 354619383099527718}
+  - {fileID: 6879529723895931106}
+  - {fileID: 6453045229085706107}
+  - {fileID: 5144369896849014300}
+  - {fileID: 7822761137357537198}
+  - {fileID: 7807906378107765051}
+  - {fileID: 8545433561482573607}
+  - {fileID: 1656444158657417486}
+  - {fileID: 2092525353158293561}
+  - {fileID: 4428024693805013349}
+  - {fileID: 8069986875225063292}
+  - {fileID: 7894194650485906276}
+  - {fileID: 3958916493053079453}
+  - {fileID: 4839888426427438961}
+  - {fileID: 4196171295511123681}
+  - {fileID: 1124635159160699606}
+  - {fileID: 3752641590540417323}
+  - {fileID: 5194795188593165912}
+  - {fileID: 9188459294064820662}
+  - {fileID: 5152403642262163908}
+  - {fileID: 5011888131976993942}
+  - {fileID: 3400624748778542482}
+  - {fileID: 1865901108490341632}
+  - {fileID: 8635885562885789524}
+  - {fileID: 5219576032256767347}
+  - {fileID: 7502697042810948080}
+  - {fileID: 3579819977137258299}
+  - {fileID: 109144377554017255}
+  - {fileID: 5709198821341137978}
+  - {fileID: 2007972131416866107}
+  - {fileID: 1522761154272425073}
+  - {fileID: 1630528266452187246}
+  - {fileID: 6155083233599798151}
+  - {fileID: 3513277781716651995}
+  - {fileID: 3677367767332634814}
+  selectedItem: {fileID: 0}
+  buyItemName: {fileID: 2978366123575211207}
+  buyItemDescription: {fileID: 4019030040990943101}
+  BuyItemValue: {fileID: 2768935452851714647}
+  sellItemName: {fileID: 1347004651945897229}
+  sellItemDescription: {fileID: 7488722616479883376}
+  sellItemValue: {fileID: 7118612585514429168}
 --- !u!1 &8563815937549789090
 GameObject:
   m_ObjectHideFlags: 0

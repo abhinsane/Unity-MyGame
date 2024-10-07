@@ -8,7 +8,7 @@ public class ShopKeeper : MonoBehaviour
 
     private bool canOpen; 
 
-    public string[] ItemsForSale;
+    public string[] ItemsForSale = new string[40];
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class ShopKeeper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && Shop.instance.shopMenu.activeInHierarchy)
+        if(canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
 
             Shop.instance.itemsForSale = ItemsForSale;
