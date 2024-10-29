@@ -25,6 +25,7 @@ public class UIFade : MonoBehaviour
     {
         if(shouldFadetoBlack)
         {
+            GameManager.instance.fadingBetweenAreas =true;
             fadeScreen.color = new Color(fadeScreen.color.r,fadeScreen.color.g,fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f,fadeSpeed * Time.deltaTime));
 
             if(fadeScreen.color.a == 1f)
@@ -40,6 +41,7 @@ public class UIFade : MonoBehaviour
             if(fadeScreen.color.a == 0f)
             {
                 shouldFadeFromBlack = false;
+                GameManager.instance.fadingBetweenAreas = false;
             }
             
         }

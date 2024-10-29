@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
 public class QuestManager : MonoBehaviour
@@ -25,6 +26,15 @@ public class QuestManager : MonoBehaviour
             Debug.Log(CheckIfComplete("quest test"));
             MarkQuestComplete("quest test");
             MarkQuestIncomplete("Archery");
+        }
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            SaveQuestData();
+        }
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            LoadQuestData();
         }
     }
 
@@ -78,5 +88,47 @@ public class QuestManager : MonoBehaviour
                 questObjects[i].CheckCompletion();
             }
         }
+    }
+
+
+    public void SaveQuestData()
+    {
+        for(int i = 0;i<questMarkerNames.Length;i++)
+        {
+            if(questMarkerComplete[i])
+            {
+                PlayerPrefs.SetInt("QuestMarker_"+ questMarkerNames[i], 1);
+
+            }
+            else
+            {
+                PlayerPrefs.SetInt("QuestMarker_"+ questMarkerNames[i], 0);
+
+            }
+        }
+
+    }
+
+    public void LoadQuestData()
+    {
+        for(int i = 0;i<questMarkerNames.Length;i++)
+        {
+            int valueToSet = 0;
+            if(PlayerPrefs.HasKey("QuestMarker_" + questMarkerNames[i]))
+            {
+                valueToSet = PlayerPrefs.GetInt("QuestMarker_"+ questMarkerNames[i]);
+
+            }
+            if(valueToSet ==0)
+            {
+                questMarkerComplete[i] = false;
+            }
+            else
+            {
+                questMarkerComplete[i] = true;
+            }
+        }
+
+
     }
 }   

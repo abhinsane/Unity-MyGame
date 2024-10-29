@@ -14,7 +14,7 @@ public class EVE : MonoBehaviour
             PlayerController.instance.transform.position = transform.position;
         }
         UIFade.instance.fadeFromBlack();
-        GameManager.instance.fadingBetweenAreas = false;
+        
     }
 
     // Update is called once per frame
