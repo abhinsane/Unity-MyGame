@@ -203,6 +203,9 @@ MonoBehaviour:
   - '"Bronze Mace"'
   - '"User must be physically strong to use it , not for you skinny"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &194876676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -591,6 +594,9 @@ MonoBehaviour:
   - '"Bronze Spear"'
   - '"Can one shot a boar easily"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &525217575
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -783,6 +789,9 @@ MonoBehaviour:
   - '"Grade B Bronze Shiled (Earth)'
   - '"Enchanted with earth magic,this shield can repair damage itself "'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &708516814
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -885,6 +894,9 @@ MonoBehaviour:
   - '"Arrow"'
   - '"Only can be used with bow"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &778373635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1134,6 +1146,9 @@ MonoBehaviour:
   - 'Grade B Bronze Sword '
   - '"Used by the bandit leader he impale his enemy limbs using this"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &847397964
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1297,6 +1312,9 @@ MonoBehaviour:
   - '"A weapon that can only be ...'
   - used by a expert not like you jerk"
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &1062110347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1489,6 +1507,9 @@ MonoBehaviour:
   - '"Bronze Trident"'
   - '"Trident represent a balance between mana , stamina , and health"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &1084792411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1636,6 +1657,9 @@ MonoBehaviour:
   - '"Bow"'
   - '"Crafted from normal wood "'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &1086075447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6359,6 +6383,9 @@ MonoBehaviour:
   - '"Grade B Bronze Shiled"'
   - '" Increase user fire magic, but not take high damage"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1307164173
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6508,6 +6535,9 @@ MonoBehaviour:
   - He dig the grave of his victim
   - First he molest childrent then kill them
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1344398097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6655,6 +6685,9 @@ MonoBehaviour:
   - '''Widow maker .... As it name suggest...'
   - it makes married woman widow"
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1470836718
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6847,6 +6880,9 @@ MonoBehaviour:
   - '"Smash .. Smash .. Smashy.. Smashy..Smash..'
   - You can smash enemy head , and his girlfrined cheeks with it ifykyk"
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &1648323977
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6949,6 +6985,9 @@ MonoBehaviour:
   - '"A Dagger "'
   - '"You can use them as self defence equipment"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1723337597
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7054,7 +7093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723337595}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.64, y: 3.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7141,6 +7180,9 @@ MonoBehaviour:
   - '"Look at his curves"'
   - '"You can slice anyone throat it with"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &1759677895
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7243,6 +7285,9 @@ MonoBehaviour:
   - '"A long ranged weapon ...'
   - which can be used to slice enemy limbs..."
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1786974397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7435,6 +7480,9 @@ MonoBehaviour:
   - '" Companion of kid like you"'
   - '" Grade D Shield"'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &1818560531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7545,6 +7593,9 @@ MonoBehaviour:
   - '"Just try not to die in the process"'
   - '"My work''s worth more than your life"'
   isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1934465516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7758,6 +7809,9 @@ MonoBehaviour:
   - '"Nothing Special"'
   - '"Just an axe "'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &1947725109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23399,6 +23453,9 @@ MonoBehaviour:
   - '" Do you wanna know , other thing inside my pant , big long thick and juicy... 
     kid'
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!212 &2138179962
 SpriteRenderer:
   m_ObjectHideFlags: 0
