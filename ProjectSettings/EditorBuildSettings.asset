@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: d1afa86da38c4294c80147863b447b82
+  - enabled: 1
     path: Assets/Scenes/Elyria Village.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Demios Tower.unity
     guid: 8dbacbd3fc961444d92860b06d6a5755
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: a35dee72a3959a146beadbfbd866f009
   m_configObjects: {}
