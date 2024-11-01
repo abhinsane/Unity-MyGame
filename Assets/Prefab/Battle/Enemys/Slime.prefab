@@ -98,14 +98,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Fire
+  - Slash
   charName: Slime
   currentHP: 100
   maxHP: 150
   currentMP: 0
   maxMp: 0
-  strength: 5
-  defence: 5
-  weaponPower: 5
+  Strength: 40
+  Defence: 40
+  weaponPower: 10
   armorPower: 5
   hasDied: 0

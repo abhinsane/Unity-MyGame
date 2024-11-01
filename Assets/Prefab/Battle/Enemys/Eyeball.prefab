@@ -98,14 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Plasma
+  - Ice
+  - Fire
   charName: Eyeball
   currentHP: 180
   maxHP: 300
   currentMP: 20
   maxMp: 50
-  strength: 8
-  defence: 8
-  weaponPower: 8
+  Strength: 20
+  Defence: 60
+  weaponPower: 20
   armorPower: 8
   hasDied: 0

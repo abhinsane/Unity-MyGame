@@ -98,14 +98,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Plasma
+  - Ice
+  - Slash
+  - Fire
   charName: Gobbler
   currentHP: 190
   maxHP: 320
   currentMP: 35
   maxMp: 50
-  strength: 10
-  defence: 10
-  weaponPower: 10
+  Strength: 25
+  Defence: 55
+  weaponPower: 15
   armorPower: 10
   hasDied: 0

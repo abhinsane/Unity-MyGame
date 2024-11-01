@@ -98,14 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Fire
+  - Ice
+  - Plasma
   charName: Celina
-  currentHP: 0
-  maxHP: 0
+  currentHP: 800
+  maxHP: 1000
   currentMP: 0
   maxMp: 0
-  strength: 0
-  defence: 0
+  Strength: 0
+  Defence: 0
   weaponPower: 0
   armorPower: 0
   hasDied: 0

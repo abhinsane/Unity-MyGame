@@ -9,9 +9,10 @@ public class BattleChar : MonoBehaviour
     public string[] movesAvailable;
 
     public string charName;
-    public int currentHP,maxHP,currentMP,maxMp,strength,defence,weaponPower,armorPower;
+    public int currentHP,maxHP,currentMP,maxMp,Strength,Defence,weaponPower,armorPower;
 
     public bool hasDied;
+    
     // Start is called before the first frame update
     void Start()
     {
