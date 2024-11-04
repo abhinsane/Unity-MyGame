@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6941173301129839490}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.6479735, y: 0.2928419, z: 0.47690305}
   m_LocalScale: {x: 1.3047161, y: 1.4419289, z: 1}
   m_ConstrainProportionsScale: 0
@@ -104,10 +104,14 @@ MonoBehaviour:
   charName: Raider
   currentHP: 700
   maxHP: 1000
-  currentMP: 0
-  maxMp: 0
+  currentMP: 70
+  maxMp: 70
   Strength: 35
   Defence: 28
   weaponPower: 0
   armorPower: 0
   hasDied: 0
+  theSprite: {fileID: 3399518987300035573}
+  deadSprite: {fileID: 19236111, guid: d48572470db426a4a8902bf7c668fc4c, type: 3}
+  aliveSprite: {fileID: 467854654, guid: d48572470db426a4a8902bf7c668fc4c, type: 3}
+  fadeSpeed: 1

@@ -102,7 +102,7 @@ MonoBehaviour:
   - Fire
   - Slash
   charName: Slime
-  currentHP: 100
+  currentHP: 80
   maxHP: 150
   currentMP: 0
   maxMp: 0
@@ -111,3 +111,7 @@ MonoBehaviour:
   weaponPower: 10
   armorPower: 5
   hasDied: 0
+  theSprite: {fileID: 3886389647181101619}
+  deadSprite: {fileID: 0}
+  aliveSprite: {fileID: 0}
+  fadeSpeed: 1

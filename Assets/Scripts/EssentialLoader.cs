@@ -12,6 +12,8 @@ public class EssentialLoader : MonoBehaviour
 
     public GameObject audioMan;
 
+    public GameObject BattleMan;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,11 @@ public class EssentialLoader : MonoBehaviour
         if(AudioManager.instance == null)
         {
             Instantiate(audioMan);
+        }
+
+        if(BattleManager.instance == null)
+        {
+            Instantiate(BattleMan);
         }
     }
 

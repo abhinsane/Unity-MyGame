@@ -15,12 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Aresia Village.unity
     guid: 958b57611e3a7ed4b8256a879fe52f93
   - enabled: 1
-    path: Assets/Scenes/ameer hero ka ghar.unity
-    guid: 699cadcb3db790645b22f2ec802606ff
+    path: Assets/Scenes/Armory.unity
+    guid: 6c08735d0da76404a8315e0340e26534
   - enabled: 1
-    path: Assets/Scenes/Demios Tower.unity
-    guid: 8dbacbd3fc961444d92860b06d6a5755
+    path: Assets/Scenes/tavern.unity
+    guid: 5a6b798dcca53864e82a4ecdd1bc788b
+  - enabled: 1
+    path: Assets/Scenes/house interior.unity
+    guid: ca11bd0188e3532478cf079a4875ab68
+  - enabled: 1
+    path: Assets/Scenes/ForestQuest.unity
+    guid: 1610573a13d2f6140b35dd78dce45e9f
   - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: a35dee72a3959a146beadbfbd866f009
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 433911cee8789ff4a8fc0c27b7ac053b
   m_configObjects: {}

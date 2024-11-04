@@ -105,10 +105,14 @@ MonoBehaviour:
   charName: Celina
   currentHP: 800
   maxHP: 1000
-  currentMP: 0
-  maxMp: 0
-  Strength: 0
-  Defence: 0
-  weaponPower: 0
-  armorPower: 0
+  currentMP: 70
+  maxMp: 70
+  Strength: 35
+  Defence: 25
+  weaponPower: 15
+  armorPower: 10
   hasDied: 0
+  theSprite: {fileID: 5603762389828645481}
+  deadSprite: {fileID: -1611300815, guid: 64bb6af0240b56442a90520dbedf713f, type: 3}
+  aliveSprite: {fileID: -866955917, guid: 7b649f461aed38740915ad5efa4bd2ce, type: 3}
+  fadeSpeed: 1

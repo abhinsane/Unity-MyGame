@@ -104,8 +104,8 @@ MonoBehaviour:
   - Slash
   - Fire
   charName: Gobbler
-  currentHP: 190
-  maxHP: 320
+  currentHP: 100
+  maxHP: 220
   currentMP: 35
   maxMp: 50
   Strength: 25
@@ -113,3 +113,7 @@ MonoBehaviour:
   weaponPower: 15
   armorPower: 10
   hasDied: 0
+  theSprite: {fileID: 1053061722617328315}
+  deadSprite: {fileID: 0}
+  aliveSprite: {fileID: 0}
+  fadeSpeed: 1
